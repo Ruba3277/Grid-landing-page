@@ -49,7 +49,7 @@ a{
     border-radius: 50%;
 }
 .header-nav{
-    margin-left: auto;
+    margin-inline-start: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -205,7 +205,11 @@ article:hover{
        padding: 1.3rem 3rem;
     } 
     
-    footer{ grid-column: 1; grid-row: 2; }
+    footer{ 
+        grid-column: 1; 
+        grid-row: 2; 
+        flex-direction: row;
+    }
     .grid{
         display: grid;
         grid-template-columns: 45% 55%;
@@ -253,9 +257,7 @@ article:hover{
       padding: 2rem;
       border-left: 0.3px solid color-mix(in srgb, var(--color-text-paragraph) 30%, transparent);
    }
-   footer{
-      flex-direction: row;
-   }
+   
    .charity{
       margin-left: auto;
       text-align: end;
